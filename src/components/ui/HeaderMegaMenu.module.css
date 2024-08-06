@@ -1,0 +1,78 @@
+.header {
+  height: 56px;
+  margin-bottom: 120px;
+  background-color: var(--mantine-color-body);
+  border-bottom: 1px solid var(--mantine-color-gray-3);
+}
+
+.inner {
+  height: 56px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: var(--mantine-color-gray-7);
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+}
+
+.link:hover {
+  background-color: var(--mantine-color-gray-0);
+}
+
+.linkLabel {
+  margin-right: 5px;
+}
+
+/* styles/globals.css or styles/MainContent.module.css */
+
+.container {
+  margin-top: 2rem;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+      width: 100px;
+      height: 100px;
+  }
+}
+
+.badge {
+  background-color: #e2e8f0;
+  color: #2d3748;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.badge:hover {
+  background-color: #cbd5e0;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .header {
+    border-bottom-color: var(--mantine-color-dark-4);
+  }
+  
+  .link {
+    color: var(--mantine-color-dark-0);
+  }
+
+  .link:hover {
+    background-color: var(--mantine-color-dark-6);
+  }
+}
